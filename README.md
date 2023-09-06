@@ -1,4 +1,4 @@
-Este é um novo projeto [**React Native**](https://reactnative.dev), inicializado usando [`@react-native-community/cli`](https://github.com/react-native- community/cli).
+Este é um novo projeto [**React Native**](https://reactnative.dev), inicializado usando [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Começando
 
