@@ -17,7 +17,8 @@
     "react-native-dialog": "^9.3.0",
     "react-native-fs": "^2.20.0",
     "react-native-webview": "^13.5.1",
-    "react-native-zip-archive": "^6.1.0"
+    "react-native-zip-archive": "^6.1.0",
+    "rn-fetch-blob": "github:joltup/rn-fetch-blob#master"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

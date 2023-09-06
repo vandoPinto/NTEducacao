@@ -11,12 +11,26 @@ import NetInfo from '@react-native-community/netinfo';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { zip, unzip, unzipAssets, subscribe } from 'react-native-zip-archive';
 import { MainBundlePath, DocumentDirectoryPath } from 'react-native-fs';
+import RNFetchBlob from 'rn-fetch-blob';
 
 function App() {
   function onNavigationStateChange(navState: object) {
     // console.log('onNavigationStateChange -> ');
     // console.log(navState);
   }
+
+  RNFetchBlob.config({
+    // add this option that makes response data to be stored as a file,
+    // this is much more performant.
+    fileCache: true,
+  })
+    .fetch("GET", "https://www.example.com/file/example.zip", {
+      //some headers ..
+    })
+    .then((res) => {
+      // the temp file path
+      console.log("The file saved to ", res.path());
+    });
 
   // NetInfo.fetch().then(state => {
   //   console.log('Connection type', state.type);
