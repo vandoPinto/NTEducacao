@@ -1,4 +1,4 @@
-Este é um novo projeto [**React Native**](https://reactnative.dev), inicializado usando [`@react-native-community/cli`](https://github.com/react-native- comunidade/cli).
+Este é um novo projeto [**React Native**](https://reactnative.dev), inicializado usando [`@react-native-community/cli`](https://github.com/react-native- community/cli).
 
 # Começando
 
@@ -12,10 +12,10 @@ Para iniciar o Metro, execute o seguinte comando na _root_ do seu projeto React 
 
 ```bash
 #usando npm
-npm início
+npm start
 
 # OU usando Yarn
-início do fio
+yarn start
 ```
 
 ## Etapa 2: inicie seu aplicativo
@@ -26,20 +26,20 @@ Deixe o Metro Bundler rodar em seu próprio terminal. Abra um _novo_ terminal da
 
 ```bash
 #usando npm
-npm executa android
+npm run android
 
 # OU usando Yarn
-fio android
+yarn android
 ```
 
 ### Para iOS
 
 ```bash
 #usando npm
-npm executa ios
+npm run ios
 
 # OU usando Yarn
-fio ios
+yarn ios
 ```
 
 Se tudo estiver configurado _corretamente_, você deverá ver seu novo aplicativo em execução em seu _Android Emulator_ ou _iOS Simulator_ em breve, desde que tenha configurado seu emulador/simulador corretamente.
