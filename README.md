@@ -1,73 +1,79 @@
-Primeiros Passos
-Nota: Certifique-se de ter concluído as instruções de Configuração do Ambiente do React Native até a etapa "Criando um novo aplicativo" antes de prosseguir.
+Este é um novo projeto [**React Native**](https://reactnative.dev), inicializado usando [`@react-native-community/cli`](https://github.com/react-native- comunidade/cli).
 
-Passo 1: Inicie o Servidor Metro
-Primeiramente, você precisará iniciar o Metro, o bundler JavaScript que acompanha o React Native.
+# Começando
 
-Para iniciar o Metro, execute o seguinte comando a partir da raiz do seu projeto React Native:
+> **Observação**: Certifique-se de ter concluído as instruções [React Native - Configuração do ambiente](https://reactnative.dev/docs/environment-setup) até a etapa "Criando um novo aplicativo", antes de continuar.
 
-bash
-Copy code
+## Etapa 1: iniciar o servidor Metro
 
-# usando npm
+Primeiro, você precisará iniciar o **Metro**, o _bundler_ JavaScript que vem _com_ o React Native.
 
-npm start
+Para iniciar o Metro, execute o seguinte comando na _root_ do seu projeto React Native:
 
-# OU usando Yarn
-
-yarn start
-Passo 2: Inicie seu Aplicativo
-Deixe o Metro Bundler em sua própria janela de terminal. Abra um novo terminal a partir da raiz do seu projeto React Native. Execute o seguinte comando para iniciar seu aplicativo Android ou iOS:
-
-Para Android
-bash
-Copy code
-
-# usando npm
-
-npm run android
+```bash
+#usando npm
+npm início
 
 # OU usando Yarn
+início do fio
+```
 
-yarn android
-Para iOS
-bash
-Copy code
+## Etapa 2: inicie seu aplicativo
 
-# usando npm
+Deixe o Metro Bundler rodar em seu próprio terminal. Abra um _novo_ terminal da _root_ do seu projeto React Native. Execute o seguinte comando para iniciar seu aplicativo _Android_ ou _iOS_:
 
-npm run ios
+### Para Android
+
+```bash
+#usando npm
+npm executa android
 
 # OU usando Yarn
+fio android
+```
 
-yarn ios
-Se tudo estiver configurado corretamente, você verá seu novo aplicativo sendo executado em seu Emulador Android ou Simulador iOS em breve, desde que você tenha configurado seu emulador/simulador corretamente.
+### Para iOS
 
-Esta é uma maneira de executar seu aplicativo - você também pode executá-lo diretamente a partir do Android Studio e Xcode, respectivamente.
+```bash
+#usando npm
+npm executa ios
 
-Passo 3: Modificando seu Aplicativo
+# OU usando Yarn
+fio ios
+```
+
+Se tudo estiver configurado _corretamente_, você deverá ver seu novo aplicativo em execução em seu _Android Emulator_ ou _iOS Simulator_ em breve, desde que tenha configurado seu emulador/simulador corretamente.
+
+Essa é uma maneira de executar seu aplicativo – você também pode executá-lo diretamente no Android Studio e no Xcode, respectivamente.
+
+## Etapa 3: Modificando seu aplicativo
+
 Agora que você executou o aplicativo com sucesso, vamos modificá-lo.
 
-Abra App.tsx em seu editor de texto de escolha e faça algumas alterações.
+1. Abra `App.tsx` no editor de texto de sua preferência e edite algumas linhas.
+2. Para **Android**: pressione a tecla <kbd>R</kbd> duas vezes ou selecione **"Recarregar"** no **Menu do desenvolvedor** (<kbd>Ctrl</kbd> + <kbd >M</kbd> (no Windows e Linux) ou <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (no macOS)) para ver suas alterações!
 
-Para Android: Pressione a tecla <kbd>R</kbd> duas vezes ou selecione "Recarregar" no Menu do Desenvolvedor (<kbd>Ctrl</kbd> + <kbd>M</kbd> (no Windows e Linux) ou <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (no macOS)) para ver suas alterações!
+   Para **iOS**: pressione <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> no seu simulador iOS para recarregar o aplicativo e ver suas alterações!
 
-Para iOS: Pressione <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> no seu Simulador iOS para recarregar o aplicativo e ver suas alterações!
+## Parabéns! :tada:
 
-Parabéns! :tada:
-Você executou e modificou com sucesso seu aplicativo React Native. :partying_face:
+Você executou e modificou com sucesso seu aplicativo React Native. :festa_face:
 
-E agora?
-Se você deseja adicionar este novo código React Native a um aplicativo existente, confira o guia de integração.
-Se você tem curiosidade em aprender mais sobre o React Native, confira a Introdução ao React Native.
-Solução de Problemas
-Se você não conseguir fazer isso funcionar, consulte a página de Solução de Problemas.
+### O que agora?
 
-Saiba Mais
-Para aprender mais sobre o React Native, confira os seguintes recursos:
+- Se você deseja adicionar este novo código React Native a um aplicativo existente, consulte o [Guia de integração](https://reactnative.dev/docs/integration-with-existente-apps).
+- Se você estiver curioso para saber mais sobre o React Native, confira a [Introdução ao React Native](https://reactnative.dev/docs/getting-started).
 
-Site do React Native - saiba mais sobre o React Native.
-Primeiros Passos - uma visão geral do React Native e como configurar seu ambiente.
-Aprenda os Conceitos Básicos - um tour guiado pelos conceitos básicos do React Native.
-Blog - leia as últimas postagens oficiais do Blog do React Native.
-@facebook/react-native - o GitHub de Código Aberto; repositório do React Native.
+# Solução de problemas
+
+Se você não conseguir fazer isso funcionar, consulte a página [Solução de problemas](https://reactnative.dev/docs/troubleshooting).
+
+# Saber mais
+
+Para saber mais sobre React Native, dê uma olhada nos seguintes recursos:
+
+- [Site React Native](https://reactnative.dev) - saiba mais sobre React Native.
+- [Primeiros passos](https://reactnative.dev/docs/environment-setup) - uma **visão geral** do React Native e como configurar seu ambiente.
+- [Aprenda o básico](https://reactnative.dev/docs/getting-started) - um **tour guiado** pelos **básicos** do React Native.
+- [Blog](https://reactnative.dev/blog) - leia as últimas postagens oficiais do **Blog** do React Native.
+- [`@facebook/react-native`](https://github.com/facebook/react-native) - o Código Aberto; **repositório** GitHub para React Native.
