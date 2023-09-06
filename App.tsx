@@ -9,6 +9,8 @@ import WebView from 'react-native-webview';
 import Dialog from 'react-native-dialog';
 import NetInfo from '@react-native-community/netinfo';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { zip, unzip, unzipAssets, subscribe } from 'react-native-zip-archive';
+import { MainBundlePath, DocumentDirectoryPath } from 'react-native-fs';
 
 function App() {
   function onNavigationStateChange(navState: object) {
