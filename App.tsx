@@ -122,7 +122,7 @@
 // atob - btoa
 
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import WebView from 'react-native-webview';
 
 function App() {
@@ -145,7 +145,7 @@ function App() {
 const styles = StyleSheet.create({
   containerView: {
     flex: 1,
-  }
+  },
 });
 
 export default App;
