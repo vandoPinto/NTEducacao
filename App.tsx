@@ -2,7 +2,7 @@
 // Senha: Mudar5401
 // atob - btoa
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import {StyleSheet, View} from 'react-native';
 import WebView from 'react-native-webview';
 
@@ -12,6 +12,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { zip, unzip, unzipAssets, subscribe } from 'react-native-zip-archive';
 import { MainBundlePath, DocumentDirectoryPath } from 'react-native-fs';
 import RNFetchBlob from 'rn-fetch-blob';
+import Orientation from 'react-native-orientation-locker';
 
 function App() {
   function onNavigationStateChange(navState: object) {
@@ -19,18 +20,23 @@ function App() {
     // console.log(navState);
   }
 
-  RNFetchBlob.config({
-    // add this option that makes response data to be stored as a file,
-    // this is much more performant.
-    fileCache: true,
-  })
-    .fetch("GET", "https://www.example.com/file/example.zip", {
-      //some headers ..
-    })
-    .then((res) => {
-      // the temp file path
-      console.log("The file saved to ", res.path());
-    });
+  useEffect(() => {
+    Orientation.lockToLandscape();
+    Orientation.lockToPortrait();
+  }, []);
+
+  // RNFetchBlob.config({
+  //   // add this option that makes response data to be stored as a file,
+  //   // this is much more performant.
+  //   fileCache: true,
+  // })
+  //   .fetch("GET", "https://www.example.com/file/example.zip", {
+  //     //some headers ..
+  //   })
+  //   .then((res) => {
+  //     // the temp file path
+  //     console.log("The file saved to ", res.path());
+  //   });
 
   // NetInfo.fetch().then(state => {
   //   console.log('Connection type', state.type);
