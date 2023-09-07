@@ -2,15 +2,15 @@
 // Senha: Mudar5401
 // atob - btoa
 
-import React, { useEffect } from 'react';
+import React, {useEffect} from 'react';
 import {StyleSheet, View} from 'react-native';
 import WebView from 'react-native-webview';
 
 import Dialog from 'react-native-dialog';
 import NetInfo from '@react-native-community/netinfo';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { zip, unzip, unzipAssets, subscribe } from 'react-native-zip-archive';
-import { MainBundlePath, DocumentDirectoryPath } from 'react-native-fs';
+import {zip, unzip, unzipAssets, subscribe} from 'react-native-zip-archive';
+import {MainBundlePath, DocumentDirectoryPath} from 'react-native-fs';
 import RNFetchBlob from 'rn-fetch-blob';
 import Orientation from 'react-native-orientation-locker';
 
